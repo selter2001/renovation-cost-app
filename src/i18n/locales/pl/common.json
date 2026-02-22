@@ -1,10 +1,10 @@
 {
   "app": { "name": "RenoCost" },
   "nav": {
-    "home": "Strona glowna",
-    "language": "Jezyk",
+    "home": "Strona główna",
+    "language": "Język",
     "theme": {
-      "toggle": "Zmien motyw",
+      "toggle": "Zmień motyw",
       "light": "Jasny",
       "dark": "Ciemny",
       "system": "Systemowy"
@@ -12,11 +12,11 @@
     "userMenu": "Konto"
   },
   "home": {
-    "title": "Kalkulator Kosztow Remontu",
-    "subtitle": "Wycen remont pokoj po pokoju",
-    "cta": "Rozpocznij wycene"
+    "title": "Kalkulator Kosztów Remontu",
+    "subtitle": "Wyceń remont pokój po pokoju",
+    "cta": "Rozpocznij wycenę"
   },
   "common": {
-    "loading": "Ladowanie..."
+    "loading": "Ładowanie..."
   }
 }

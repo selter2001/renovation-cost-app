@@ -16,21 +16,20 @@ export function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-lg supports-[backdrop-filter]:bg-background/60">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <a
-            href="#/"
-            className="font-bold text-xl tracking-tight"
-            style={{ fontFamily: "var(--font-heading)" }}
-          >
-            <span className="bg-gradient-to-r from-primary to-ring bg-clip-text text-transparent">
-              RenoCost
+          <a href="#/" className="flex items-center gap-2">
+            <div className="flex size-8 items-center justify-center rounded-lg bg-brand text-brand-foreground font-bold text-sm font-heading">
+              R
+            </div>
+            <span className="text-xl font-bold tracking-tight text-foreground font-heading">
+              Reno<span className="text-brand">Cost</span>
             </span>
           </a>
 
           {/* Desktop nav controls */}
-          <div className="hidden md:flex items-center gap-2">
+          <div className="hidden items-center gap-2 md:flex">
             <LanguageToggle />
             <ModeToggle />
             <Button variant="ghost" size="sm" className="gap-2">
@@ -40,7 +39,7 @@ export function Navbar() {
           </div>
 
           {/* Mobile nav controls */}
-          <div className="flex md:hidden items-center gap-1">
+          <div className="flex items-center gap-1 md:hidden">
             <LanguageToggle />
             <ModeToggle />
             <Sheet>
@@ -51,10 +50,7 @@ export function Navbar() {
               </SheetTrigger>
               <SheetContent side="right">
                 <SheetHeader>
-                  <SheetTitle
-                    className="text-left"
-                    style={{ fontFamily: "var(--font-heading)" }}
-                  >
+                  <SheetTitle className="text-left font-heading">
                     RenoCost
                   </SheetTitle>
                 </SheetHeader>

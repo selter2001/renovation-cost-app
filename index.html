@@ -7,14 +7,22 @@
     <title>RenoCost</title>
     <script>
       try {
-        const theme = localStorage.getItem("renocost-theme");
-        const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "dark"
-          : "light";
-        const effectiveTheme = theme === "system" || !theme ? systemTheme : theme;
-        document.documentElement.classList.add(effectiveTheme);
+        var d = document.documentElement;
+        var theme = localStorage.getItem("renocost-theme");
+        var sys = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        var t = theme === "system" || !theme ? sys : theme;
+        d.classList.add(t);
+        d.style.setProperty("--no-transition", "1");
+        d.setAttribute("data-theme-ready", "");
       } catch (e) {}
     </script>
+    <style>
+      html[data-theme-ready] *,
+      html[data-theme-ready] *::before,
+      html[data-theme-ready] *::after {
+        transition: none !important;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>

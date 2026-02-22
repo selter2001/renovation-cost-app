@@ -31,10 +31,16 @@ export function ThemeProvider({
         ? "dark"
         : "light";
       root.classList.add(systemTheme);
-      return;
+    } else {
+      root.classList.add(theme);
     }
 
-    root.classList.add(theme);
+    // Re-enable transitions after first render (anti-FOUC)
+    if (root.hasAttribute("data-theme-ready")) {
+      requestAnimationFrame(() => {
+        root.removeAttribute("data-theme-ready");
+      });
+    }
   }, [theme]);
 
   return (

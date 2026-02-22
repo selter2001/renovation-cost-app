@@ -5,27 +5,18 @@ export default function HomePage() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center px-4 py-12">
-      {/* Background gradient */}
-      <div
-        className="absolute inset-0 -z-10 bg-gradient-to-br from-background via-background to-muted opacity-80"
-        aria-hidden="true"
-      />
-
+    <div className="flex min-h-[calc(100vh-5rem)] flex-col items-center justify-center px-4 py-12">
       {/* Hero glassmorphism card */}
-      <div className="w-full max-w-2xl rounded-2xl border border-white/20 dark:border-white/10 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md shadow-lg shadow-black/5 p-8 sm:p-12 text-center">
-        <h1
-          className="text-4xl sm:text-5xl font-bold mb-4 leading-tight"
-          style={{ fontFamily: "var(--font-heading)" }}
-        >
+      <div className="w-full max-w-2xl rounded-2xl border border-border/50 bg-card/80 backdrop-blur-md shadow-xl p-8 sm:p-12 text-center">
+        <h1 className="text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl font-heading mb-4">
           {t("home.title")}
         </h1>
-        <p className="text-lg text-muted-foreground mb-8 max-w-md mx-auto">
+        <p className="mx-auto mb-8 max-w-md text-lg text-muted-foreground">
           {t("home.subtitle")}
         </p>
         <Button
           size="lg"
-          className="rounded-xl px-8 py-3 text-base font-semibold"
+          className="rounded-xl bg-brand px-8 py-3 text-base font-semibold text-brand-foreground hover:bg-brand/90"
         >
           {t("home.cta")}
         </Button>
