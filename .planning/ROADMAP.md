@@ -25,7 +25,7 @@ Budujemy kalkulator kosztow remontu jako SPA od zera z wizard UX, glassmorphism 
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold projektu: Vite + React 19 + TS + Tailwind v4 + shadcn + routing + theme + i18n + fonty
+- [x] 01-01-PLAN.md — Scaffold projektu: Vite + React 19 + TS + Tailwind v4 + shadcn + routing + theme + i18n + fonty (DONE 2026-02-22)
 - [ ] 01-02-PLAN.md — UI: nawigacja z glassmorphism, przelaczniki, hero strona glowna, deploy workflow
 
 ### Phase 2: Core Wizard + Kalkulator
@@ -66,6 +66,6 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation + Design System | 0/2 | Planned | - |
+| 1. Foundation + Design System | 1/2 | In progress | - |
 | 2. Core Wizard + Kalkulator | 0/3 | Not started | - |
 | 3. Auth + Cloud Save | 0/2 | Not started | - |
