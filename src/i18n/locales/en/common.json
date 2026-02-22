@@ -1,0 +1,22 @@
+{
+  "app": { "name": "RenoCost" },
+  "nav": {
+    "home": "Home",
+    "language": "Language",
+    "theme": {
+      "toggle": "Toggle theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "userMenu": "Account"
+  },
+  "home": {
+    "title": "Renovation Cost Calculator",
+    "subtitle": "Estimate your renovation room by room",
+    "cta": "Start estimate"
+  },
+  "common": {
+    "loading": "Loading..."
+  }
+}
