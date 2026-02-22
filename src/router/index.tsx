@@ -1,13 +1,6 @@
-import { createHashRouter, Outlet } from "react-router";
+import { createHashRouter } from "react-router";
+import { Layout } from "@/components/layout/Layout";
 import HomePage from "@/pages/HomePage";
-
-function Layout() {
-  return (
-    <div>
-      <Outlet />
-    </div>
-  );
-}
 
 const router = createHashRouter([
   {
