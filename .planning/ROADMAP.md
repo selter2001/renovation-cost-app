@@ -22,11 +22,11 @@ Budujemy kalkulator kosztow remontu jako SPA od zera z wizard UX, glassmorphism 
   3. Uzytkownik moze przelaczac jezyk PL/EN w nawigacji -- caly widoczny interfejs zmienia jezyk, wybor persystuje miedzy sesjami
   4. Interfejs wyglada profesjonalnie na telefonie i desktopie -- glassmorphism, zaokraglone rogi, paleta granat/grafit z akcentem, Inter/Montserrat
   5. Nawigacja zawiera logo, przelacznik jezyka, przelacznik motywu i placeholder na menu uzytkownika
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md — Scaffold projektu: Vite + React 19 + TS + Tailwind v4 + shadcn + routing + theme + i18n + fonty
+- [ ] 01-02-PLAN.md — UI: nawigacja z glassmorphism, przelaczniki, hero strona glowna, deploy workflow
 
 ### Phase 2: Core Wizard + Kalkulator
 **Goal**: Uzytkownik moze przejsc caly wizard krok po kroku, dodac pokoje, zdefiniowac wymiary i prace, zobaczyc live podsumowanie kosztow i wyeksportowac wycene do PDF -- kompletny kalkulator dzialajacy bez logowania
@@ -66,6 +66,6 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation + Design System | 0/2 | Not started | - |
+| 1. Foundation + Design System | 0/2 | Planned | - |
 | 2. Core Wizard + Kalkulator | 0/3 | Not started | - |
 | 3. Auth + Cloud Save | 0/2 | Not started | - |
