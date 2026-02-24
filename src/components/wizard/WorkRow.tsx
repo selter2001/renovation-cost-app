@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useWizardStore } from '@/stores/wizard-store'
 import { getWorkQuantity, calcWorkCost } from '@/lib/calc'
@@ -19,6 +20,15 @@ export function WorkRow({ room, workType, roomWork }: WorkRowProps) {
 
   const enabled = roomWork?.enabled ?? false
   const unitPrice = roomWork?.unitPrice ?? 0
+
+  const [localPrice, setLocalPrice] = useState('')
+  const [isFocused, setIsFocused] = useState(false)
+
+  useEffect(() => {
+    if (!isFocused) {
+      setLocalPrice(unitPrice ? (unitPrice / 100).toFixed(2) : '')
+    }
+  }, [unitPrice, isFocused])
   const quantity = getWorkQuantity(room, workType.id)
   const cost = enabled ? calcWorkCost(quantity, unitPrice) : 0
 
@@ -52,9 +62,14 @@ export function WorkRow({ room, workType, roomWork }: WorkRowProps) {
           step="0.01"
           min="0"
           disabled={!enabled}
-          value={unitPrice ? (unitPrice / 100).toFixed(2) : ''}
+          value={isFocused ? localPrice : (unitPrice ? (unitPrice / 100).toFixed(2) : '')}
           onChange={(e) => {
-            const grosze = parseInputToGrosze(e.target.value)
+            setLocalPrice(e.target.value)
+          }}
+          onFocus={() => setIsFocused(true)}
+          onBlur={() => {
+            setIsFocused(false)
+            const grosze = parseInputToGrosze(localPrice)
             setWorkPrice(room.id, workType.id, grosze)
           }}
           placeholder="0,00"
