@@ -19,37 +19,6 @@
   "common": {
     "loading": "Ładowanie..."
   },
-  "auth": {
-    "login": "Logowanie",
-    "signup": "Rejestracja",
-    "logout": "Wyloguj się",
-    "email": "E-mail",
-    "password": "Hasło",
-    "confirmPassword": "Potwierdź hasło",
-    "loginButton": "Zaloguj się",
-    "signupButton": "Zarejestruj się",
-    "noAccount": "Nie masz konta?",
-    "hasAccount": "Masz już konto?",
-    "forgotPassword": "Zapomniałeś hasła?",
-    "resetPassword": "Resetuj hasło",
-    "sendResetLink": "Wyślij link resetujący",
-    "resetSent": "Link do resetowania hasła został wysłany na podany adres e-mail.",
-    "updatePassword": "Ustaw nowe hasło",
-    "newPassword": "Nowe hasło",
-    "updatePasswordButton": "Zaktualizuj hasło",
-    "passwordUpdated": "Hasło zostało zaktualizowane. Przekierowanie...",
-    "myEstimates": "Moje wyceny",
-    "backToLogin": "Powrót do logowania",
-    "errors": {
-      "invalidCredentials": "Nieprawidłowy e-mail lub hasło.",
-      "emailTaken": "Ten adres e-mail jest już zajęty.",
-      "weakPassword": "Hasło musi mieć co najmniej 6 znaków.",
-      "passwordsMismatch": "Hasła nie są identyczne.",
-      "emailRequired": "Podaj adres e-mail.",
-      "passwordRequired": "Podaj hasło.",
-      "generic": "Wystąpił błąd. Spróbuj ponownie."
-    }
-  },
   "wizard": {
     "steps": {
       "rooms": "Pomieszczenia",
@@ -139,29 +108,7 @@
     "pdfTabular": "Tabelaryczny",
     "noRooms": "Dodaj pomieszczenia aby zobaczyć wycenę"
   },
-  "estimates": {
-    "title": "Moje wyceny",
-    "empty": "Nie masz jeszcze zapisanych wycen",
-    "save": "Zapisz wycenę",
-    "saveToCloud": "Zapisz w chmurze",
-    "name": "Nazwa wyceny",
-    "namePlaceholder": "np. Mieszkanie ul. Kwiatowa",
-    "saveButton": "Zapisz",
-    "updateButton": "Nadpisz",
-    "load": "Wczytaj",
-    "delete": "Usuń",
-    "deleteConfirm": "Czy na pewno chcesz usunąć tę wycenę?",
-    "saved": "Wycena zapisana",
-    "loaded": "Wycena wczytana",
-    "deleted": "Wycena usunięta",
-    "updated": "Wycena nadpisana",
-    "loginToSave": "Zaloguj się, aby zapisać wycenę w chmurze",
-    "rooms": "{{count}} pokoi",
-    "newEstimate": "Nowa wycena",
-    "errors": {
-      "saveFailed": "Nie udało się zapisać wyceny. Spróbuj ponownie.",
-      "loadFailed": "Nie udało się wczytać wycen. Spróbuj ponownie.",
-      "deleteFailed": "Nie udało się usunąć wyceny. Spróbuj ponownie."
-    }
+  "footer": {
+    "author": "Wykonał Wojciech Olszak"
   }
 }

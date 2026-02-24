@@ -5,10 +5,6 @@ import { Skeleton } from '@/components/ui/skeleton'
 import HomePage from '@/pages/HomePage'
 
 const WizardPage = lazy(() => import('@/pages/WizardPage'))
-const LoginPage = lazy(() => import('@/pages/LoginPage'))
-const ResetPasswordPage = lazy(() => import('@/pages/ResetPasswordPage'))
-const UpdatePasswordPage = lazy(() => import('@/pages/UpdatePasswordPage'))
-const EstimatesPage = lazy(() => import('@/pages/EstimatesPage'))
 
 function WizardPageSkeleton() {
   return (
@@ -35,19 +31,6 @@ function WizardPageSkeleton() {
   )
 }
 
-function AuthPageSkeleton() {
-  return (
-    <div className="flex min-h-[calc(100vh-4rem)] items-center justify-center px-4 py-8">
-      <div className="w-full max-w-md space-y-4">
-        <Skeleton className="mx-auto h-8 w-32" />
-        <Skeleton className="h-10 w-full" />
-        <Skeleton className="h-10 w-full" />
-        <Skeleton className="h-10 w-full" />
-      </div>
-    </div>
-  )
-}
-
 const router = createHashRouter([
   {
     path: '/',
@@ -59,38 +42,6 @@ const router = createHashRouter([
         element: (
           <Suspense fallback={<WizardPageSkeleton />}>
             <WizardPage />
-          </Suspense>
-        ),
-      },
-      {
-        path: 'login',
-        element: (
-          <Suspense fallback={<AuthPageSkeleton />}>
-            <LoginPage />
-          </Suspense>
-        ),
-      },
-      {
-        path: 'reset-password',
-        element: (
-          <Suspense fallback={<AuthPageSkeleton />}>
-            <ResetPasswordPage />
-          </Suspense>
-        ),
-      },
-      {
-        path: 'update-password',
-        element: (
-          <Suspense fallback={<AuthPageSkeleton />}>
-            <UpdatePasswordPage />
-          </Suspense>
-        ),
-      },
-      {
-        path: 'estimates',
-        element: (
-          <Suspense fallback={<AuthPageSkeleton />}>
-            <EstimatesPage />
           </Suspense>
         ),
       },

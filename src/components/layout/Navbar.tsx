@@ -1,7 +1,7 @@
 import { Menu } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { LanguageToggle } from "@/components/language-toggle";
 import { ModeToggle } from "@/components/theme-toggle";
-import { UserMenu } from "@/components/auth/UserMenu";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -12,6 +12,8 @@ import {
 } from "@/components/ui/sheet";
 
 export function Navbar() {
+  const { t } = useTranslation();
+
   return (
     <nav className="sticky top-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-lg supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -30,7 +32,6 @@ export function Navbar() {
           <div className="hidden items-center gap-2 md:flex">
             <LanguageToggle />
             <ModeToggle />
-            <UserMenu />
           </div>
 
           {/* Mobile nav controls */}
@@ -39,7 +40,7 @@ export function Navbar() {
             <ModeToggle />
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" aria-label="Menu">
+                <Button variant="ghost" size="icon" aria-label={t("nav.userMenu")}>
                   <Menu className="size-5" />
                 </Button>
               </SheetTrigger>
@@ -49,9 +50,6 @@ export function Navbar() {
                     RenoCost
                   </SheetTitle>
                 </SheetHeader>
-                <div className="flex flex-col gap-1 px-4">
-                  <UserMenu />
-                </div>
               </SheetContent>
             </Sheet>
           </div>

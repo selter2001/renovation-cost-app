@@ -1,9 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router'
 import { useWizardStore } from '@/stores/wizard-store'
-import { useAuthStore } from '@/stores/auth-store'
-import { SaveEstimateDialog } from '@/components/estimates/SaveEstimateDialog'
 import { PREDEFINED_WORKS, ROOM_TYPES } from '@/types/wizard'
 import {
   getWorkQuantity,
@@ -29,8 +26,6 @@ import {
   Monitor,
   LayoutGrid,
   FileDown,
-  CloudUpload,
-  LogIn,
 } from 'lucide-react'
 
 const ICON_MAP: Record<string, LucideIcon> = {
@@ -47,11 +42,9 @@ export function SummaryStep() {
   const { t } = useTranslation()
   const rooms = useWizardStore((s) => s.rooms)
   const vatRate = useWizardStore((s) => s.vatRate)
-  const user = useAuthStore((s) => s.user)
   const [pdfFormat, setPdfFormat] = useState<'standard' | 'tabular'>(
     'standard'
   )
-  const [saveDialogOpen, setSaveDialogOpen] = useState(false)
 
   if (rooms.length === 0) {
     return (
@@ -228,37 +221,6 @@ export function SummaryStep() {
           />
         </div>
       </Card>
-
-      {/* Save to Cloud section */}
-      <Card className="gap-3 p-4">
-        {user ? (
-          <>
-            <Button
-              className="w-full bg-brand text-brand-foreground hover:bg-brand/90"
-              onClick={() => setSaveDialogOpen(true)}
-            >
-              <CloudUpload className="size-5" />
-              {t('estimates.saveToCloud' as never)}
-            </Button>
-          </>
-        ) : (
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <LogIn className="size-4 shrink-0" />
-            <span>{t('estimates.loginToSave' as never)}</span>
-            <Link
-              to="/login"
-              className="ml-1 shrink-0 font-medium text-brand underline-offset-4 hover:underline"
-            >
-              {t('auth.login' as never)}
-            </Link>
-          </div>
-        )}
-      </Card>
-
-      <SaveEstimateDialog
-        open={saveDialogOpen}
-        onOpenChange={setSaveDialogOpen}
-      />
     </div>
   )
 }
