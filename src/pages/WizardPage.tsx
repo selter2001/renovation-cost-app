@@ -6,6 +6,7 @@ import { WizardProgress } from '@/components/wizard/WizardProgress'
 import { WizardNav } from '@/components/wizard/WizardNav'
 import { RoomsStep } from '@/components/wizard/RoomsStep'
 import { DimensionsStep } from '@/components/wizard/DimensionsStep'
+import { WorksStep } from '@/components/wizard/WorksStep'
 import { FloatingSummary } from '@/components/wizard/FloatingSummary'
 
 const variants = {
@@ -20,7 +21,7 @@ const variants = {
   }),
 }
 
-const STEPS = [RoomsStep, DimensionsStep]
+const STEPS = [RoomsStep, DimensionsStep, WorksStep]
 
 export default function WizardPage() {
   const currentStep = useWizardStore((s) => s.currentStep)
@@ -61,10 +62,6 @@ export default function WizardPage() {
         >
           {StepComponent ? (
             <StepComponent />
-          ) : currentStep === 2 ? (
-            <div className="py-12 text-center text-muted-foreground">
-              WorksStep
-            </div>
           ) : (
             <div className="py-12 text-center text-muted-foreground">
               SummaryStep
