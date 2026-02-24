@@ -3,7 +3,7 @@ import { motion } from 'motion/react'
 import { useWizardStore } from '@/stores/wizard-store'
 import { calcNetTotal, calcVat, calcGrossFromNet } from '@/lib/calc'
 import { Button } from '@/components/ui/button'
-import { formatPLN } from '@/lib/format'
+import { AnimatedCounter } from '@/components/wizard/AnimatedCounter'
 
 export function FloatingSummary() {
   const { t } = useTranslation()
@@ -28,19 +28,25 @@ export function FloatingSummary() {
             <span className="text-xs text-muted-foreground">
               {t('summary.netTotal')}
             </span>
-            <p className="text-sm font-medium">{formatPLN(net)}</p>
+            <p className="text-sm font-medium">
+              <AnimatedCounter value={net} />
+            </p>
           </div>
           <div className="hidden sm:block">
             <span className="text-xs text-muted-foreground">
               {t('summary.vat')} {vatRate}%
             </span>
-            <p className="text-sm font-medium">{formatPLN(vat)}</p>
+            <p className="text-sm font-medium">
+              <AnimatedCounter value={vat} />
+            </p>
           </div>
           <div>
             <span className="text-xs text-muted-foreground">
               {t('summary.grossTotal')}
             </span>
-            <p className="text-base font-bold">{formatPLN(gross)}</p>
+            <p className="text-base font-bold">
+              <AnimatedCounter value={gross} />
+            </p>
           </div>
         </div>
         <div className="flex items-center gap-1">
