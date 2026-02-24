@@ -39,12 +39,12 @@ Plans:
   4. Uzytkownik widzi 7 predefiniowanych typow prac, moze wlaczac/wylaczac je per pokoj, ustawiac ceny jednostkowe, dodawac wlasne typy prac -- ilosci obliczane automatycznie z wymiarow
   5. Plywajacy pasek podsumowania pokazuje sume netto/VAT/brutto w czasie rzeczywistym z animacja licznika -- uzytkownik moze wybrac stawke VAT 8% lub 23%
   6. Uzytkownik moze wyeksportowac wycene do PDF (standardowy lub tabelaryczny) z polskimi znakami, danymi pokoi, typami prac, cenami i sumami -- PDF respektuje wybrany jezyk
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
 - [x] 02-01-PLAN.md — Data foundation: typy, Zustand store z persist, calc engine na groszach, i18n keys, shadcn components (DONE 2026-02-24)
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-02-PLAN.md — Wizard shell + RoomsStep + DimensionsStep + FloatingSummary z animowanym licznikiem + route /wizard
+- [ ] 02-03-PLAN.md — WorksStep + SummaryStep + eksport PDF (standardowy + tabelaryczny) z polskim fontem i i18n
 
 ### Phase 3: Auth + Cloud Save
 **Goal**: Uzytkownik moze zalozyc konto, zalogowac sie i zapisywac/wczytywac wyceny w chmurze -- kalkulator dziala rowniez bez logowania (tryb goscia)
