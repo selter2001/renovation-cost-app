@@ -1,7 +1,7 @@
-import { Menu, User } from "lucide-react";
-import { useTranslation } from "react-i18next";
+import { Menu } from "lucide-react";
 import { LanguageToggle } from "@/components/language-toggle";
 import { ModeToggle } from "@/components/theme-toggle";
+import { UserMenu } from "@/components/auth/UserMenu";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -12,8 +12,6 @@ import {
 } from "@/components/ui/sheet";
 
 export function Navbar() {
-  const { t } = useTranslation();
-
   return (
     <nav className="sticky top-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-lg supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -32,10 +30,7 @@ export function Navbar() {
           <div className="hidden items-center gap-2 md:flex">
             <LanguageToggle />
             <ModeToggle />
-            <Button variant="ghost" size="sm" className="gap-2">
-              <User className="size-4" />
-              {t("nav.userMenu")}
-            </Button>
+            <UserMenu />
           </div>
 
           {/* Mobile nav controls */}
@@ -55,10 +50,7 @@ export function Navbar() {
                   </SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col gap-1 px-4">
-                  <Button variant="ghost" className="justify-start gap-2">
-                    <User className="size-4" />
-                    {t("nav.userMenu")}
-                  </Button>
+                  <UserMenu />
                 </div>
               </SheetContent>
             </Sheet>
