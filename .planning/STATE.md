@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-22)
 ## Current Position
 
 Phase: 3 of 3 (Auth + Cloud Save) -- IN PROGRESS
-Plan: 1 of 3 in current phase -- COMPLETE
-Status: Executing Wave 2
-Last activity: 2026-02-24 -- Completed 03-01-PLAN.md (Supabase foundation)
+Plan: 2 of 3 in current phase -- COMPLETE
+Status: Executing Wave 2 (03-03 next)
+Last activity: 2026-02-24 -- Completed 03-02-PLAN.md (Auth UI)
 
-Progress: [████████░░] 75%
+Progress: [█████████░] 88%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 6
-- Average duration: 5min
-- Total execution time: 30min
+- Total plans completed: 7
+- Average duration: 4min
+- Total execution time: 34min
 
 **By Phase:**
 
@@ -29,10 +29,10 @@ Progress: [████████░░] 75%
 |-------|-------|-------|----------|
 | 01-foundation-design-system | 2/2 | 16min | 8min |
 | 02-core-wizard-kalkulator | 3/3 | 12min | 4min |
-| 03-auth-cloud-save | 1/3 | 2min | 2min |
+| 03-auth-cloud-save | 2/3 | 6min | 3min |
 
 **Recent Trend:**
-- Last 5 plans: 4min, 12min, 4min, 4min, 2min
+- Last 5 plans: 12min, 4min, 4min, 2min, 4min
 - Trend: stable/fast
 
 *Updated after each plan completion*
@@ -67,6 +67,10 @@ Recent decisions affecting current work:
 - [03-01]: PKCE flow zamiast implicit -- unika konfliktu hash fragment z HashRouter.
 - [03-01]: Auth store NIE persystowany -- Supabase zarzadza sesja w swoim localStorage.
 - [03-01]: AuthInit pokazuje spinner podczas initial session check (zapobiega FOUC).
+- [03-02]: Dynamic i18n key mapping dla auth errors uzywa 'as never' assertion (pattern z 02-02).
+- [03-02]: Auth pages lazy-loaded z dedykowanym AuthPageSkeleton fallback.
+- [03-02]: UserMenu uzywa useNavigate (react-router) zamiast href dla SPA navigation.
+- [03-02]: shadcn CLI bug -- pisze do literalnego @/ katalogu zamiast src/ -- komponenty tworzone recznie.
 
 ### Pending Todos
 
@@ -80,9 +84,10 @@ Recent decisions affecting current work:
 - [01-02 RESOLVED]: Tailwind v4 @theme inline — wszystkie zmienne shadcn musza byc zarejestrowane
 - [02-03 NOTE]: WizardPage chunk ~1.7MB z powodu @react-pdf/renderer -- code-splitting mozliwy w przyszlosci
 - [03-01 DEFERRED]: Supabase project configuration -- user will set up at end of phase
+- [03-02 NOTE]: shadcn CLI alias resolution bug -- @/ resolved as literal path, not src/
 
 ## Session Continuity
 
 Last session: 2026-02-24
-Stopped at: Completed 03-01-PLAN.md. Executing Wave 2 (03-02 Auth UI).
-Resume file: .planning/phases/03-auth-cloud-save/03-01-SUMMARY.md
+Stopped at: Completed 03-02-PLAN.md. Ready for 03-03 (Estimates CRUD + Cloud Save).
+Resume file: .planning/phases/03-auth-cloud-save/03-02-SUMMARY.md
