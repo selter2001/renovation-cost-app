@@ -7,6 +7,7 @@ import { WizardNav } from '@/components/wizard/WizardNav'
 import { RoomsStep } from '@/components/wizard/RoomsStep'
 import { DimensionsStep } from '@/components/wizard/DimensionsStep'
 import { WorksStep } from '@/components/wizard/WorksStep'
+import { SummaryStep } from '@/components/wizard/SummaryStep'
 import { FloatingSummary } from '@/components/wizard/FloatingSummary'
 
 const variants = {
@@ -21,7 +22,7 @@ const variants = {
   }),
 }
 
-const STEPS = [RoomsStep, DimensionsStep, WorksStep]
+const STEPS = [RoomsStep, DimensionsStep, WorksStep, SummaryStep]
 
 export default function WizardPage() {
   const currentStep = useWizardStore((s) => s.currentStep)
@@ -60,13 +61,7 @@ export default function WizardPage() {
           exit="exit"
           transition={{ duration: 0.25, ease: 'easeInOut' }}
         >
-          {StepComponent ? (
-            <StepComponent />
-          ) : (
-            <div className="py-12 text-center text-muted-foreground">
-              SummaryStep
-            </div>
-          )}
+          {StepComponent && <StepComponent />}
         </motion.div>
       </AnimatePresence>
 
