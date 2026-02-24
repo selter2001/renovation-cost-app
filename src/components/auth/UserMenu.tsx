@@ -43,6 +43,7 @@ export function UserMenu() {
       : user.email
 
   async function handleSignOut() {
+    if (!supabase) return
     try {
       await supabase.auth.signOut()
     } catch {

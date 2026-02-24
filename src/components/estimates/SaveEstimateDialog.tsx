@@ -53,6 +53,8 @@ export function SaveEstimateDialog({
     if (!name.trim()) return
     if (!session?.user) return
 
+    if (!supabase) { setError(t('estimates.errors.saveFailed' as never)); return }
+
     setSaving(true)
     setError(null)
     setSuccess(null)

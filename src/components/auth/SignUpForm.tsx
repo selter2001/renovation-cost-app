@@ -40,6 +40,8 @@ export function SignUpForm() {
       return
     }
 
+    if (!supabase) { setError(t('auth.errors.generic')); return }
+
     setIsLoading(true)
     try {
       const { error: authError } = await supabase.auth.signUp({

@@ -11,6 +11,12 @@ export function AuthInit({ children }: AuthInitProps) {
   const setAuth = useAuthStore((s) => s.setAuth)
 
   useEffect(() => {
+    if (!supabase) {
+      // No Supabase configured — run in guest-only mode
+      setAuth(null, null)
+      return
+    }
+
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, session) => {

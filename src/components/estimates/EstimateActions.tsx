@@ -11,6 +11,8 @@ export function useLoadEstimate() {
 
   return useCallback(
     async (quoteId: string) => {
+      if (!supabase) throw new Error('Supabase not configured')
+
       const { data, error } = await supabase
         .from('quotes')
         .select('*')
@@ -36,6 +38,8 @@ export function useLoadEstimate() {
 
 export function useDeleteEstimate() {
   return useCallback(async (quoteId: string) => {
+    if (!supabase) throw new Error('Supabase not configured')
+
     const { error } = await supabase
       .from('quotes')
       .delete()

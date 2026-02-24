@@ -23,6 +23,8 @@ export function ResetPasswordForm() {
       return
     }
 
+    if (!supabase) { setError(t('auth.errors.generic')); return }
+
     setIsLoading(true)
     try {
       const redirectTo = window.location.origin + (import.meta.env.BASE_URL || '/') + '#/update-password'

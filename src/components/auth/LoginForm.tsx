@@ -35,6 +35,8 @@ export function LoginForm() {
       return
     }
 
+    if (!supabase) { setError(t('auth.errors.generic')); return }
+
     setIsLoading(true)
     try {
       const { error: authError } = await supabase.auth.signInWithPassword({

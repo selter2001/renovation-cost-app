@@ -31,6 +31,8 @@ export function EstimatesList() {
   const deleteEstimate = useDeleteEstimate()
 
   const fetchEstimates = useCallback(async () => {
+    if (!supabase) { setLoading(false); return }
+
     setLoading(true)
     setError(null)
 

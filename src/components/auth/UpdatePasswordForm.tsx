@@ -30,6 +30,8 @@ export function UpdatePasswordForm() {
       return
     }
 
+    if (!supabase) { setError(t('auth.errors.generic')); return }
+
     setIsLoading(true)
     try {
       const { error: updateError } = await supabase.auth.updateUser({
