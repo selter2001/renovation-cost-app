@@ -19,6 +19,37 @@
   "common": {
     "loading": "Ładowanie..."
   },
+  "auth": {
+    "login": "Logowanie",
+    "signup": "Rejestracja",
+    "logout": "Wyloguj się",
+    "email": "E-mail",
+    "password": "Hasło",
+    "confirmPassword": "Potwierdź hasło",
+    "loginButton": "Zaloguj się",
+    "signupButton": "Zarejestruj się",
+    "noAccount": "Nie masz konta?",
+    "hasAccount": "Masz już konto?",
+    "forgotPassword": "Zapomniałeś hasła?",
+    "resetPassword": "Resetuj hasło",
+    "sendResetLink": "Wyślij link resetujący",
+    "resetSent": "Link do resetowania hasła został wysłany na podany adres e-mail.",
+    "updatePassword": "Ustaw nowe hasło",
+    "newPassword": "Nowe hasło",
+    "updatePasswordButton": "Zaktualizuj hasło",
+    "passwordUpdated": "Hasło zostało zaktualizowane. Przekierowanie...",
+    "myEstimates": "Moje wyceny",
+    "backToLogin": "Powrót do logowania",
+    "errors": {
+      "invalidCredentials": "Nieprawidłowy e-mail lub hasło.",
+      "emailTaken": "Ten adres e-mail jest już zajęty.",
+      "weakPassword": "Hasło musi mieć co najmniej 6 znaków.",
+      "passwordsMismatch": "Hasła nie są identyczne.",
+      "emailRequired": "Podaj adres e-mail.",
+      "passwordRequired": "Podaj hasło.",
+      "generic": "Wystąpił błąd. Spróbuj ponownie."
+    }
+  },
   "wizard": {
     "steps": {
       "rooms": "Pomieszczenia",

@@ -19,6 +19,37 @@
   "common": {
     "loading": "Loading..."
   },
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Log out",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "loginButton": "Log in",
+    "signupButton": "Sign up",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "forgotPassword": "Forgot password?",
+    "resetPassword": "Reset password",
+    "sendResetLink": "Send reset link",
+    "resetSent": "A password reset link has been sent to your email address.",
+    "updatePassword": "Set new password",
+    "newPassword": "New password",
+    "updatePasswordButton": "Update password",
+    "passwordUpdated": "Password updated successfully. Redirecting...",
+    "myEstimates": "My estimates",
+    "backToLogin": "Back to login",
+    "errors": {
+      "invalidCredentials": "Invalid email or password.",
+      "emailTaken": "This email address is already taken.",
+      "weakPassword": "Password must be at least 6 characters.",
+      "passwordsMismatch": "Passwords do not match.",
+      "emailRequired": "Please enter your email address.",
+      "passwordRequired": "Please enter your password.",
+      "generic": "An error occurred. Please try again."
+    }
+  },
   "wizard": {
     "steps": {
       "rooms": "Rooms",
