@@ -8,7 +8,7 @@ Budujemy kalkulator kosztow remontu jako SPA od zera z wizard UX, glassmorphism 
 
 - [x] **Phase 1: Foundation + Design System** - Scaffold, routing, theme, i18n, shared UI, deploy pipeline ✓ 2026-02-22
 - [x] **Phase 2: Core Wizard + Kalkulator** - Kompletny kalkulator: wizard, pokoje, wymiary, prace, kalkulacja, floating summary, PDF ✓ 2026-02-24
-- [ ] **Phase 3: Auth + Cloud Save** - Logowanie, tryb goscia, zapis/wczytywanie wycen w chmurze z RLS
+- [x] **Phase 3: Auth + Cloud Save** - Logowanie, tryb goscia, zapis/wczytywanie wycen w chmurze z RLS ✓ 2026-02-24
 
 ## Phase Details
 
@@ -60,8 +60,8 @@ Plans:
 
 Plans:
 - [x] 03-01-PLAN.md — Supabase foundation: klient SDK z PKCE, auth store (Zustand), typy bazy danych, schema SQL z RLS, env vars (DONE 2026-02-24)
-- [ ] 03-02-PLAN.md — Auth UI: formularze login/signup/reset hasla, UserMenu w nawigacji, strony auth, routing, i18n PL/EN
-- [ ] 03-03-PLAN.md — Estimates CRUD: zapis/wczytanie/nadpisanie/usuniecie wycen, strona Moje Wyceny, dialog zapisu w SummaryStep
+- [x] 03-02-PLAN.md — Auth UI: formularze login/signup/reset hasla, UserMenu w nawigacji, strony auth, routing, i18n PL/EN (DONE 2026-02-24)
+- [x] 03-03-PLAN.md — Estimates CRUD: zapis/wczytanie/nadpisanie/usuniecie wycen, strona Moje Wyceny, dialog zapisu w SummaryStep (DONE 2026-02-24)
 
 ## Progress
 
@@ -69,4 +69,4 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Foundation + Design System | 2/2 | ✓ Complete | 2026-02-22 |
 | 2. Core Wizard + Kalkulator | 3/3 | ✓ Complete | 2026-02-24 |
-| 3. Auth + Cloud Save | 1/3 | ◆ In progress | - |
+| 3. Auth + Cloud Save | 3/3 | ✓ Complete | 2026-02-24 |

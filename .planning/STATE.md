@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-22)
 
 **Core value:** Uzytkownik moze szybko i intuicyjnie wyliczyc koszt remontu pokoj po pokoju, bez przytlaczania -- dzieki krokowym formularzom, interaktywnym kartom i animowanemu podsumowaniu na zywo.
-**Current focus:** Phase 3 IN PROGRESS -- Auth + Cloud Save. Executing plans.
+**Current focus:** ALL PHASES COMPLETE. Project v1.0 milestone done.
 
 ## Current Position
 
-Phase: 3 of 3 (Auth + Cloud Save) -- IN PROGRESS
-Plan: 2 of 3 in current phase -- COMPLETE
-Status: Executing Wave 2 (03-03 next)
-Last activity: 2026-02-24 -- Completed 03-02-PLAN.md (Auth UI)
+Phase: 3 of 3 (Auth + Cloud Save) -- COMPLETE
+Plan: 3 of 3 in current phase -- COMPLETE
+Status: All phases complete
+Last activity: 2026-02-24 -- Completed 03-03-PLAN.md (Estimates CRUD + Cloud Save)
 
-Progress: [█████████░] 88%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7
+- Total plans completed: 8
 - Average duration: 4min
-- Total execution time: 34min
+- Total execution time: 39min
 
 **By Phase:**
 
@@ -29,10 +29,10 @@ Progress: [█████████░] 88%
 |-------|-------|-------|----------|
 | 01-foundation-design-system | 2/2 | 16min | 8min |
 | 02-core-wizard-kalkulator | 3/3 | 12min | 4min |
-| 03-auth-cloud-save | 2/3 | 6min | 3min |
+| 03-auth-cloud-save | 3/3 | 11min | 3.7min |
 
 **Recent Trend:**
-- Last 5 plans: 12min, 4min, 4min, 2min, 4min
+- Last 5 plans: 4min, 4min, 2min, 4min, 5min
 - Trend: stable/fast
 
 *Updated after each plan completion*
@@ -71,6 +71,10 @@ Recent decisions affecting current work:
 - [03-02]: Auth pages lazy-loaded z dedykowanym AuthPageSkeleton fallback.
 - [03-02]: UserMenu uzywa useNavigate (react-router) zamiast href dla SPA navigation.
 - [03-02]: shadcn CLI bug -- pisze do literalnego @/ katalogu zamiast src/ -- komponenty tworzone recznie.
+- [03-03]: Database type wymaga Relationships: [] na tabelach -- Supabase v2.97 GenericSchema.
+- [03-03]: QuoteRow type assertion dla select('*') results -- tsc -b nie inferuje row type z query string.
+- [03-03]: EstimateActions jako hooks module (useLoadEstimate, useDeleteEstimate) -- reusability.
+- [03-03]: Guest experience: subtle login prompt, nie modal/blocker -- wizard dziala bez auth.
 
 ### Pending Todos
 
@@ -89,5 +93,5 @@ Recent decisions affecting current work:
 ## Session Continuity
 
 Last session: 2026-02-24
-Stopped at: Completed 03-02-PLAN.md. Ready for 03-03 (Estimates CRUD + Cloud Save).
-Resume file: .planning/phases/03-auth-cloud-save/03-02-SUMMARY.md
+Stopped at: ALL PHASES COMPLETE. v1.0 milestone achieved.
+Resume file: .planning/phases/03-auth-cloud-save/03-03-SUMMARY.md
