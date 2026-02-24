@@ -138,5 +138,30 @@
     "pdfStandard": "Standardowy",
     "pdfTabular": "Tabelaryczny",
     "noRooms": "Dodaj pomieszczenia aby zobaczyć wycenę"
+  },
+  "estimates": {
+    "title": "Moje wyceny",
+    "empty": "Nie masz jeszcze zapisanych wycen",
+    "save": "Zapisz wycenę",
+    "saveToCloud": "Zapisz w chmurze",
+    "name": "Nazwa wyceny",
+    "namePlaceholder": "np. Mieszkanie ul. Kwiatowa",
+    "saveButton": "Zapisz",
+    "updateButton": "Nadpisz",
+    "load": "Wczytaj",
+    "delete": "Usuń",
+    "deleteConfirm": "Czy na pewno chcesz usunąć tę wycenę?",
+    "saved": "Wycena zapisana",
+    "loaded": "Wycena wczytana",
+    "deleted": "Wycena usunięta",
+    "updated": "Wycena nadpisana",
+    "loginToSave": "Zaloguj się, aby zapisać wycenę w chmurze",
+    "rooms": "{{count}} pokoi",
+    "newEstimate": "Nowa wycena",
+    "errors": {
+      "saveFailed": "Nie udało się zapisać wyceny. Spróbuj ponownie.",
+      "loadFailed": "Nie udało się wczytać wycen. Spróbuj ponownie.",
+      "deleteFailed": "Nie udało się usunąć wyceny. Spróbuj ponownie."
+    }
   }
 }

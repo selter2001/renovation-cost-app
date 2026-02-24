@@ -138,5 +138,30 @@
     "pdfStandard": "Standard",
     "pdfTabular": "Tabular",
     "noRooms": "Add rooms to see the estimate"
+  },
+  "estimates": {
+    "title": "My Estimates",
+    "empty": "You don't have any saved estimates yet",
+    "save": "Save estimate",
+    "saveToCloud": "Save to cloud",
+    "name": "Estimate name",
+    "namePlaceholder": "e.g. Apartment on Flower St.",
+    "saveButton": "Save",
+    "updateButton": "Overwrite",
+    "load": "Load",
+    "delete": "Delete",
+    "deleteConfirm": "Are you sure you want to delete this estimate?",
+    "saved": "Estimate saved",
+    "loaded": "Estimate loaded",
+    "deleted": "Estimate deleted",
+    "updated": "Estimate overwritten",
+    "loginToSave": "Log in to save your estimate to the cloud",
+    "rooms": "{{count}} rooms",
+    "newEstimate": "New estimate",
+    "errors": {
+      "saveFailed": "Failed to save estimate. Please try again.",
+      "loadFailed": "Failed to load estimates. Please try again.",
+      "deleteFailed": "Failed to delete estimate. Please try again."
+    }
   }
 }

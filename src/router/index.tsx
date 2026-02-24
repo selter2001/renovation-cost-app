@@ -8,6 +8,7 @@ const WizardPage = lazy(() => import('@/pages/WizardPage'))
 const LoginPage = lazy(() => import('@/pages/LoginPage'))
 const ResetPasswordPage = lazy(() => import('@/pages/ResetPasswordPage'))
 const UpdatePasswordPage = lazy(() => import('@/pages/UpdatePasswordPage'))
+const EstimatesPage = lazy(() => import('@/pages/EstimatesPage'))
 
 function WizardPageSkeleton() {
   return (
@@ -82,6 +83,14 @@ const router = createHashRouter([
         element: (
           <Suspense fallback={<AuthPageSkeleton />}>
             <UpdatePasswordPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'estimates',
+        element: (
+          <Suspense fallback={<AuthPageSkeleton />}>
+            <EstimatesPage />
           </Suspense>
         ),
       },

@@ -31,6 +31,7 @@ export interface Database {
           data?: QuoteData
           updated_at?: string
         }
+        Relationships: []
       }
     }
     Views: Record<string, never>
