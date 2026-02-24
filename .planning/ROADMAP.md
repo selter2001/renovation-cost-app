@@ -42,7 +42,7 @@ Plans:
 **Plans**: TBD
 
 Plans:
-- [ ] 02-01: TBD
+- [x] 02-01-PLAN.md — Data foundation: typy, Zustand store z persist, calc engine na groszach, i18n keys, shadcn components (DONE 2026-02-24)
 - [ ] 02-02: TBD
 - [ ] 02-03: TBD
 
@@ -67,5 +67,5 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation + Design System | 2/2 | ✓ Complete | 2026-02-22 |
-| 2. Core Wizard + Kalkulator | 0/3 | Not started | - |
+| 2. Core Wizard + Kalkulator | 1/3 | In progress | - |
 | 3. Auth + Cloud Save | 0/2 | Not started | - |

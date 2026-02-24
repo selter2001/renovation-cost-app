@@ -5,33 +5,34 @@
 See: .planning/PROJECT.md (updated 2026-02-22)
 
 **Core value:** Uzytkownik moze szybko i intuicyjnie wyliczyc koszt remontu pokoj po pokoju, bez przytlaczania -- dzieki krokowym formularzom, interaktywnym kartom i animowanemu podsumowaniu na zywo.
-**Current focus:** Phase 1 complete — ready for Phase 2
+**Current focus:** Phase 2 in progress -- Core Wizard + Kalkulator
 
 ## Current Position
 
-Phase: 1 of 3 (Foundation + Design System) — COMPLETE
-Plan: 2 of 2 in current phase — ALL DONE
-Status: Phase 1 complete, ready to plan Phase 2
-Last activity: 2026-02-22 -- Completed 01-02-PLAN.md (UI nawigacja + deploy)
+Phase: 2 of 3 (Core Wizard + Kalkulator)
+Plan: 1 of 3 in current phase
+Status: In progress
+Last activity: 2026-02-24 -- Completed 02-01-PLAN.md (data foundation: types, store, calc, i18n)
 
-Progress: [███░░░░░░░] 33%
+Progress: [████░░░░░░] 43%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
-- Average duration: 8min
-- Total execution time: 16min
+- Total plans completed: 3
+- Average duration: 7min
+- Total execution time: 20min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation-design-system | 2/2 | 16min | 8min |
+| 02-core-wizard-kalkulator | 1/3 | 4min | 4min |
 
 **Recent Trend:**
-- Last 5 plans: 4min, 12min
-- Trend: -
+- Last 5 plans: 4min, 12min, 4min
+- Trend: stable
 
 *Updated after each plan completion*
 
@@ -53,6 +54,9 @@ Recent decisions affecting current work:
 - [01-02]: Brand color (--color-brand) oddzielny od primary — do akcentow i CTA.
 - [01-02]: Anti-FOUC: data-theme-ready pattern blokuje tranzycje CSS przy ladowaniu.
 - [01-02]: Tailwind v4 wymaga @theme inline z --color-* mappings dla zmiennych shadcn.
+- [02-01]: CustomWork zawiera unitPrice bezposrednio -- calcCustomWorkCost jest self-contained.
+- [02-01]: Store partialize wyklucza currentStep -- wizard startuje od kroku 0 po odswiezeniu.
+- [02-01]: localStorage klucz "renocost-wizard-v1" dla persystencji stanu wizarda.
 
 ### Pending Todos
 
@@ -60,12 +64,12 @@ Recent decisions affecting current work:
 
 ### Blockers/Concerns
 
-- [Research]: @react-pdf/renderer v4.3 + React 19 -- wymaga weryfikacji PoC na poczatku Phase 2
+- [02-01 RESOLVED]: @react-pdf/renderer v4.3.2 + React 19 -- zainstalowany, kompatybilny
 - [01-01 RESOLVED]: ESLint v10 plugin compatibility -- uzywamy v9.39.3
 - [01-02 RESOLVED]: Tailwind v4 @theme inline — wszystkie zmienne shadcn musza byc zarejestrowane
 
 ## Session Continuity
 
-Last session: 2026-02-22
-Stopped at: Phase 1 complete. Nastepna: Phase 2 (Core Wizard + Kalkulator).
-Resume file: None
+Last session: 2026-02-24
+Stopped at: Completed 02-01-PLAN.md. Next: 02-02-PLAN.md (wizard UI).
+Resume file: .planning/phases/02-core-wizard-kalkulator/02-01-SUMMARY.md
