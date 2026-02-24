@@ -59,7 +59,7 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 03-01-PLAN.md — Supabase foundation: klient SDK z PKCE, auth store (Zustand), typy bazy danych, schema SQL z RLS, env vars
+- [x] 03-01-PLAN.md — Supabase foundation: klient SDK z PKCE, auth store (Zustand), typy bazy danych, schema SQL z RLS, env vars (DONE 2026-02-24)
 - [ ] 03-02-PLAN.md — Auth UI: formularze login/signup/reset hasla, UserMenu w nawigacji, strony auth, routing, i18n PL/EN
 - [ ] 03-03-PLAN.md — Estimates CRUD: zapis/wczytanie/nadpisanie/usuniecie wycen, strona Moje Wyceny, dialog zapisu w SummaryStep
 
@@ -69,4 +69,4 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Foundation + Design System | 2/2 | ✓ Complete | 2026-02-22 |
 | 2. Core Wizard + Kalkulator | 3/3 | ✓ Complete | 2026-02-24 |
-| 3. Auth + Cloud Save | 0/3 | Not started | - |
+| 3. Auth + Cloud Save | 1/3 | ◆ In progress | - |

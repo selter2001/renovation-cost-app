@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-22)
 
 **Core value:** Uzytkownik moze szybko i intuicyjnie wyliczyc koszt remontu pokoj po pokoju, bez przytlaczania -- dzieki krokowym formularzom, interaktywnym kartom i animowanemu podsumowaniu na zywo.
-**Current focus:** Phase 2 COMPLETE -- Core Wizard + Kalkulator. Ready for Phase 3.
+**Current focus:** Phase 3 IN PROGRESS -- Auth + Cloud Save. Executing plans.
 
 ## Current Position
 
-Phase: 2 of 3 (Core Wizard + Kalkulator) -- COMPLETE
-Plan: 3 of 3 in current phase -- COMPLETE
-Status: Phase complete
-Last activity: 2026-02-24 -- Completed 02-03-PLAN.md (WorksStep, SummaryStep, PDF export)
+Phase: 3 of 3 (Auth + Cloud Save) -- IN PROGRESS
+Plan: 1 of 3 in current phase -- COMPLETE
+Status: Executing Wave 2
+Last activity: 2026-02-24 -- Completed 03-01-PLAN.md (Supabase foundation)
 
-Progress: [███████░░░] 71%
+Progress: [████████░░] 75%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 5
+- Total plans completed: 6
 - Average duration: 5min
-- Total execution time: 28min
+- Total execution time: 30min
 
 **By Phase:**
 
@@ -29,9 +29,10 @@ Progress: [███████░░░] 71%
 |-------|-------|-------|----------|
 | 01-foundation-design-system | 2/2 | 16min | 8min |
 | 02-core-wizard-kalkulator | 3/3 | 12min | 4min |
+| 03-auth-cloud-save | 1/3 | 2min | 2min |
 
 **Recent Trend:**
-- Last 5 plans: 4min, 4min, 12min, 4min, 4min
+- Last 5 plans: 4min, 12min, 4min, 4min, 2min
 - Trend: stable/fast
 
 *Updated after each plan completion*
@@ -63,10 +64,14 @@ Recent decisions affecting current work:
 - [02-03]: PDF translations jako Record<string,string> props -- worker thread nie moze uzywac React hooks/context.
 - [02-03]: Roboto TTF z cdnjs CDN dla polskich znakow diakrytycznych.
 - [02-03]: STEPS array w WizardPage zawiera wszystkie 4 komponenty -- brak placeholderow.
+- [03-01]: PKCE flow zamiast implicit -- unika konfliktu hash fragment z HashRouter.
+- [03-01]: Auth store NIE persystowany -- Supabase zarzadza sesja w swoim localStorage.
+- [03-01]: AuthInit pokazuje spinner podczas initial session check (zapobiega FOUC).
 
 ### Pending Todos
 
 - Wlaczyc GitHub Pages w ustawieniach repo (Settings > Pages > Source: GitHub Actions)
+- Skonfigurowac Supabase: anon key w .env.local, schema.sql, email auth, redirect URLs
 
 ### Blockers/Concerns
 
@@ -74,9 +79,10 @@ Recent decisions affecting current work:
 - [01-01 RESOLVED]: ESLint v10 plugin compatibility -- uzywamy v9.39.3
 - [01-02 RESOLVED]: Tailwind v4 @theme inline — wszystkie zmienne shadcn musza byc zarejestrowane
 - [02-03 NOTE]: WizardPage chunk ~1.7MB z powodu @react-pdf/renderer -- code-splitting mozliwy w przyszlosci
+- [03-01 DEFERRED]: Supabase project configuration -- user will set up at end of phase
 
 ## Session Continuity
 
 Last session: 2026-02-24
-Stopped at: Completed 02-03-PLAN.md. Phase 2 COMPLETE. Next: Phase 3 planning (Auth + Cloud Save).
-Resume file: .planning/phases/02-core-wizard-kalkulator/02-03-SUMMARY.md
+Stopped at: Completed 03-01-PLAN.md. Executing Wave 2 (03-02 Auth UI).
+Resume file: .planning/phases/03-auth-cloud-save/03-01-SUMMARY.md
