@@ -12,17 +12,22 @@
   "dependencies": {
     "@fontsource-variable/inter": "^5.1.1",
     "@fontsource-variable/montserrat": "^5.1.1",
+    "@react-pdf/renderer": "^4.3.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "i18next": "^25.2.1",
     "i18next-browser-languagedetector": "^8.0.5",
+    "immer": "^11.1.4",
     "lucide-react": "^0.575.0",
+    "motion": "^12.34.3",
     "radix-ui": "^1.4.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-i18next": "^15.5.2",
     "react-router": "^7.3.0",
-    "tailwind-merge": "^3.5.0"
+    "tailwind-merge": "^3.5.0",
+    "use-sound": "^5.0.0",
+    "zustand": "^5.0.11"
   },
   "devDependencies": {
     "@eslint/js": "^9.20.0",
