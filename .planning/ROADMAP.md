@@ -7,7 +7,7 @@ Budujemy kalkulator kosztow remontu jako SPA od zera z wizard UX, glassmorphism 
 ## Phases
 
 - [x] **Phase 1: Foundation + Design System** - Scaffold, routing, theme, i18n, shared UI, deploy pipeline ✓ 2026-02-22
-- [ ] **Phase 2: Core Wizard + Kalkulator** - Kompletny kalkulator: wizard, pokoje, wymiary, prace, kalkulacja, floating summary, PDF
+- [x] **Phase 2: Core Wizard + Kalkulator** - Kompletny kalkulator: wizard, pokoje, wymiary, prace, kalkulacja, floating summary, PDF ✓ 2026-02-24
 - [ ] **Phase 3: Auth + Cloud Save** - Logowanie, tryb goscia, zapis/wczytywanie wycen w chmurze z RLS
 
 ## Phase Details
@@ -43,8 +43,8 @@ Plans:
 
 Plans:
 - [x] 02-01-PLAN.md — Data foundation: typy, Zustand store z persist, calc engine na groszach, i18n keys, shadcn components (DONE 2026-02-24)
-- [ ] 02-02-PLAN.md — Wizard shell + RoomsStep + DimensionsStep + FloatingSummary z animowanym licznikiem + route /wizard
-- [ ] 02-03-PLAN.md — WorksStep + SummaryStep + eksport PDF (standardowy + tabelaryczny) z polskim fontem i i18n
+- [x] 02-02-PLAN.md — Wizard shell + RoomsStep + DimensionsStep + FloatingSummary z animowanym licznikiem + route /wizard (DONE 2026-02-24)
+- [x] 02-03-PLAN.md — WorksStep + SummaryStep + eksport PDF (standardowy + tabelaryczny) z polskim fontem i i18n (DONE 2026-02-24)
 
 ### Phase 3: Auth + Cloud Save
 **Goal**: Uzytkownik moze zalozyc konto, zalogowac sie i zapisywac/wczytywac wyceny w chmurze -- kalkulator dziala rowniez bez logowania (tryb goscia)
@@ -67,5 +67,5 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation + Design System | 2/2 | ✓ Complete | 2026-02-22 |
-| 2. Core Wizard + Kalkulator | 1/3 | In progress | - |
+| 2. Core Wizard + Kalkulator | 3/3 | ✓ Complete | 2026-02-24 |
 | 3. Auth + Cloud Save | 0/2 | Not started | - |

@@ -5,33 +5,33 @@
 See: .planning/PROJECT.md (updated 2026-02-22)
 
 **Core value:** Uzytkownik moze szybko i intuicyjnie wyliczyc koszt remontu pokoj po pokoju, bez przytlaczania -- dzieki krokowym formularzom, interaktywnym kartom i animowanemu podsumowaniu na zywo.
-**Current focus:** Phase 2 in progress -- Core Wizard + Kalkulator
+**Current focus:** Phase 2 COMPLETE -- Core Wizard + Kalkulator. Ready for Phase 3.
 
 ## Current Position
 
-Phase: 2 of 3 (Core Wizard + Kalkulator)
-Plan: 2 of 3 in current phase
-Status: In progress
-Last activity: 2026-02-24 -- Completed 02-02-PLAN.md (wizard UI shell with rooms, dimensions, floating summary)
+Phase: 2 of 3 (Core Wizard + Kalkulator) -- COMPLETE
+Plan: 3 of 3 in current phase -- COMPLETE
+Status: Phase complete
+Last activity: 2026-02-24 -- Completed 02-03-PLAN.md (WorksStep, SummaryStep, PDF export)
 
-Progress: [██████░░░░] 57%
+Progress: [███████░░░] 71%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
-- Average duration: 6min
-- Total execution time: 24min
+- Total plans completed: 5
+- Average duration: 5min
+- Total execution time: 28min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation-design-system | 2/2 | 16min | 8min |
-| 02-core-wizard-kalkulator | 2/3 | 8min | 4min |
+| 02-core-wizard-kalkulator | 3/3 | 12min | 4min |
 
 **Recent Trend:**
-- Last 5 plans: 4min, 4min, 12min, 4min
+- Last 5 plans: 4min, 4min, 12min, 4min, 4min
 - Trend: stable/fast
 
 *Updated after each plan completion*
@@ -60,6 +60,9 @@ Recent decisions affecting current work:
 - [02-02]: Dynamic i18n keys z ROOM_TYPES uzywa 'as never' assertion dla strict TypeScript.
 - [02-02]: Sound effects generowane ffmpeg (sine wave <2KB) zamiast pobierania z CDN.
 - [02-02]: AnimatePresence mode="wait" dla sekwencyjnych przejsc krokow wizarda.
+- [02-03]: PDF translations jako Record<string,string> props -- worker thread nie moze uzywac React hooks/context.
+- [02-03]: Roboto TTF z cdnjs CDN dla polskich znakow diakrytycznych.
+- [02-03]: STEPS array w WizardPage zawiera wszystkie 4 komponenty -- brak placeholderow.
 
 ### Pending Todos
 
@@ -70,9 +73,10 @@ Recent decisions affecting current work:
 - [02-01 RESOLVED]: @react-pdf/renderer v4.3.2 + React 19 -- zainstalowany, kompatybilny
 - [01-01 RESOLVED]: ESLint v10 plugin compatibility -- uzywamy v9.39.3
 - [01-02 RESOLVED]: Tailwind v4 @theme inline — wszystkie zmienne shadcn musza byc zarejestrowane
+- [02-03 NOTE]: WizardPage chunk ~1.7MB z powodu @react-pdf/renderer -- code-splitting mozliwy w przyszlosci
 
 ## Session Continuity
 
 Last session: 2026-02-24
-Stopped at: Completed 02-02-PLAN.md. Next: 02-03-PLAN.md (wizard works step, summary step, PDF export).
-Resume file: .planning/phases/02-core-wizard-kalkulator/02-02-SUMMARY.md
+Stopped at: Completed 02-03-PLAN.md. Phase 2 COMPLETE. Next: Phase 3 planning (Auth + Cloud Save).
+Resume file: .planning/phases/02-core-wizard-kalkulator/02-03-SUMMARY.md
