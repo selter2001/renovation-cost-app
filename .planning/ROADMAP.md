@@ -56,11 +56,12 @@ Plans:
   3. Uzytkownik moze zresetowac zapomniane haslo przez email
   4. Zalogowany uzytkownik moze zapisac wycene, zobaczyc liste swoich wycen (nazwa + data), wczytac, edytowac/nadpisac i usunac wycene
   5. Dane uzytkownikow sa chronione przez RLS -- uzytkownik widzi tylko swoje wyceny, nie ma dostepu do cudzych
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
+- [ ] 03-01-PLAN.md — Supabase foundation: klient SDK z PKCE, auth store (Zustand), typy bazy danych, schema SQL z RLS, env vars
+- [ ] 03-02-PLAN.md — Auth UI: formularze login/signup/reset hasla, UserMenu w nawigacji, strony auth, routing, i18n PL/EN
+- [ ] 03-03-PLAN.md — Estimates CRUD: zapis/wczytanie/nadpisanie/usuniecie wycen, strona Moje Wyceny, dialog zapisu w SummaryStep
 
 ## Progress
 
@@ -68,4 +69,4 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Foundation + Design System | 2/2 | ✓ Complete | 2026-02-22 |
 | 2. Core Wizard + Kalkulator | 3/3 | ✓ Complete | 2026-02-24 |
-| 3. Auth + Cloud Save | 0/2 | Not started | - |
+| 3. Auth + Cloud Save | 0/3 | Not started | - |
