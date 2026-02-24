@@ -4,6 +4,43 @@
 
 Kalkulator kosztów remontu mieszkania. Dodaj pomieszczenia, podaj wymiary, wybierz prace remontowe i otrzymaj szczegółową wycenę z możliwością eksportu do PDF.
 
+## Zrzuty ekranu
+
+### Strona główna
+
+| Tryb jasny | Tryb ciemny |
+|:---:|:---:|
+| ![Strona główna - jasny](docs/screenshots/02-home-light.png) | ![Strona główna - ciemny](docs/screenshots/01-home-dark.png) |
+
+### Krok 1 — Pomieszczenia
+
+| Tryb jasny | Tryb ciemny |
+|:---:|:---:|
+| ![Pomieszczenia - jasny](docs/screenshots/03-rooms-light.png) | ![Pomieszczenia - ciemny](docs/screenshots/04-rooms-dark.png) |
+
+### Krok 2 — Wymiary
+
+| Tryb jasny | Tryb ciemny |
+|:---:|:---:|
+| ![Wymiary - jasny](docs/screenshots/06-dimensions-light.png) | ![Wymiary - ciemny](docs/screenshots/05-dimensions-dark.png) |
+
+### Krok 3 — Prace remontowe
+
+| Tryb jasny | Tryb ciemny |
+|:---:|:---:|
+| ![Prace - jasny](docs/screenshots/08-works-light.png) | ![Prace - ciemny](docs/screenshots/10-works-detail-dark.png) |
+
+| Własne prace (jasny) | Własne prace (ciemny) |
+|:---:|:---:|
+| ![Własne prace - jasny](docs/screenshots/08-works-light.png) | ![Własne prace - ciemny](docs/screenshots/09-works-custom-dark.png) |
+
+### Krok 4 — Podsumowanie i eksport PDF
+
+| Tryb jasny | Tryb ciemny |
+|:---:|:---:|
+| ![Podsumowanie - jasny](docs/screenshots/13-summary-light.png) | ![Podsumowanie - ciemny](docs/screenshots/11-summary-dark.png) |
+| ![PDF - jasny](docs/screenshots/14-pdf-light.png) | ![PDF - ciemny](docs/screenshots/12-pdf-dark.png) |
+
 ## Funkcje
 
 - Kreator krok po kroku: pomieszczenia, wymiary, prace, podsumowanie
@@ -47,6 +84,43 @@ Wojciech Olszak
 [**Open the app**](https://selter2001.github.io/renovation-cost-app/)
 
 A renovation cost calculator for apartments. Add rooms, enter dimensions, select renovation works, and get a detailed estimate with PDF export.
+
+## Screenshots
+
+### Home page
+
+| Light mode | Dark mode |
+|:---:|:---:|
+| ![Home - light](docs/screenshots/02-home-light.png) | ![Home - dark](docs/screenshots/01-home-dark.png) |
+
+### Step 1 — Rooms
+
+| Light mode | Dark mode |
+|:---:|:---:|
+| ![Rooms - light](docs/screenshots/03-rooms-light.png) | ![Rooms - dark](docs/screenshots/04-rooms-dark.png) |
+
+### Step 2 — Dimensions
+
+| Light mode | Dark mode |
+|:---:|:---:|
+| ![Dimensions - light](docs/screenshots/06-dimensions-light.png) | ![Dimensions - dark](docs/screenshots/05-dimensions-dark.png) |
+
+### Step 3 — Renovation works
+
+| Light mode | Dark mode |
+|:---:|:---:|
+| ![Works - light](docs/screenshots/08-works-light.png) | ![Works - dark](docs/screenshots/10-works-detail-dark.png) |
+
+| Custom works (light) | Custom works (dark) |
+|:---:|:---:|
+| ![Custom works - light](docs/screenshots/08-works-light.png) | ![Custom works - dark](docs/screenshots/09-works-custom-dark.png) |
+
+### Step 4 — Summary & PDF export
+
+| Light mode | Dark mode |
+|:---:|:---:|
+| ![Summary - light](docs/screenshots/13-summary-light.png) | ![Summary - dark](docs/screenshots/11-summary-dark.png) |
+| ![PDF - light](docs/screenshots/14-pdf-light.png) | ![PDF - dark](docs/screenshots/12-pdf-dark.png) |
 
 ## Features
 
