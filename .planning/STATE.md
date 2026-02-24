@@ -10,29 +10,29 @@ See: .planning/PROJECT.md (updated 2026-02-22)
 ## Current Position
 
 Phase: 2 of 3 (Core Wizard + Kalkulator)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: In progress
-Last activity: 2026-02-24 -- Completed 02-01-PLAN.md (data foundation: types, store, calc, i18n)
+Last activity: 2026-02-24 -- Completed 02-02-PLAN.md (wizard UI shell with rooms, dimensions, floating summary)
 
-Progress: [████░░░░░░] 43%
+Progress: [██████░░░░] 57%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: 7min
-- Total execution time: 20min
+- Total plans completed: 4
+- Average duration: 6min
+- Total execution time: 24min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation-design-system | 2/2 | 16min | 8min |
-| 02-core-wizard-kalkulator | 1/3 | 4min | 4min |
+| 02-core-wizard-kalkulator | 2/3 | 8min | 4min |
 
 **Recent Trend:**
-- Last 5 plans: 4min, 12min, 4min
-- Trend: stable
+- Last 5 plans: 4min, 4min, 12min, 4min
+- Trend: stable/fast
 
 *Updated after each plan completion*
 
@@ -57,6 +57,9 @@ Recent decisions affecting current work:
 - [02-01]: CustomWork zawiera unitPrice bezposrednio -- calcCustomWorkCost jest self-contained.
 - [02-01]: Store partialize wyklucza currentStep -- wizard startuje od kroku 0 po odswiezeniu.
 - [02-01]: localStorage klucz "renocost-wizard-v1" dla persystencji stanu wizarda.
+- [02-02]: Dynamic i18n keys z ROOM_TYPES uzywa 'as never' assertion dla strict TypeScript.
+- [02-02]: Sound effects generowane ffmpeg (sine wave <2KB) zamiast pobierania z CDN.
+- [02-02]: AnimatePresence mode="wait" dla sekwencyjnych przejsc krokow wizarda.
 
 ### Pending Todos
 
@@ -71,5 +74,5 @@ Recent decisions affecting current work:
 ## Session Continuity
 
 Last session: 2026-02-24
-Stopped at: Completed 02-01-PLAN.md. Next: 02-02-PLAN.md (wizard UI).
-Resume file: .planning/phases/02-core-wizard-kalkulator/02-01-SUMMARY.md
+Stopped at: Completed 02-02-PLAN.md. Next: 02-03-PLAN.md (wizard works step, summary step, PDF export).
+Resume file: .planning/phases/02-core-wizard-kalkulator/02-02-SUMMARY.md
