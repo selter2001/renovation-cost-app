@@ -18,5 +18,94 @@
   },
   "common": {
     "loading": "Ładowanie..."
+  },
+  "wizard": {
+    "steps": {
+      "rooms": "Pomieszczenia",
+      "dimensions": "Wymiary",
+      "works": "Prace",
+      "summary": "Podsumowanie"
+    },
+    "next": "Dalej",
+    "prev": "Wstecz",
+    "finish": "Zakończ",
+    "reset": "Zacznij od nowa",
+    "progress": "Krok {{current}} z {{total}}"
+  },
+  "rooms": {
+    "types": {
+      "kitchen": "Kuchnia",
+      "bathroom": "Łazienka",
+      "living": "Salon",
+      "bedroom": "Sypialnia",
+      "hallway": "Korytarz",
+      "office": "Biuro",
+      "other": "Inne"
+    },
+    "add": "Dodaj pomieszczenie",
+    "remove": "Usuń",
+    "edit": "Edytuj nazwę",
+    "editTitle": "Zmień nazwę pomieszczenia",
+    "nameLabel": "Nazwa",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "empty": "Nie dodano jeszcze żadnych pomieszczeń",
+    "selectType": "Wybierz typ pomieszczenia"
+  },
+  "dimensions": {
+    "walls": "Ściany",
+    "wall": "Ściana",
+    "ceilings": "Sufity",
+    "ceiling": "Sufit",
+    "floor": "Posadzka",
+    "corners": "Narożniki",
+    "grooves": "Bruzdy",
+    "acrylic": "Akrylowanie",
+    "addWall": "Dodaj ścianę",
+    "addCeiling": "Dodaj sufit",
+    "removeWall": "Usuń ścianę",
+    "removeCeiling": "Usuń sufit",
+    "netArea": "Powierzchnia netto",
+    "unit": {
+      "m2": "m\u00b2",
+      "mb": "mb",
+      "szt": "szt."
+    }
+  },
+  "works": {
+    "types": {
+      "painting": "Malowanie",
+      "priming": "Gruntowanie",
+      "plastering": "Szpachlowanie",
+      "floorProtection": "Ochrona posadzki",
+      "corners": "Narożniki",
+      "grooves": "Bruzdy",
+      "acrylic": "Akrylowanie"
+    },
+    "unitPrice": "Cena jedn.",
+    "quantity": "Ilość",
+    "cost": "Koszt",
+    "addCustom": "Dodaj własną pracę",
+    "customName": "Nazwa pracy",
+    "customUnit": "Jednostka",
+    "customQuantity": "Ilość",
+    "enabled": "Włączona",
+    "disabled": "Wyłączona"
+  },
+  "summary": {
+    "title": "Podsumowanie wyceny",
+    "room": "Pomieszczenie",
+    "work": "Praca",
+    "subtotal": "Suma pokoju",
+    "netTotal": "Razem netto",
+    "vat": "VAT",
+    "vatRate": "Stawka VAT",
+    "grossTotal": "Razem brutto",
+    "exportPdf": "Pobierz PDF",
+    "pdfGenerating": "Generowanie...",
+    "pdfFormat": "Format PDF",
+    "pdfStandard": "Standardowy",
+    "pdfTabular": "Tabelaryczny",
+    "noRooms": "Dodaj pomieszczenia aby zobaczyć wycenę"
   }
 }

@@ -18,5 +18,94 @@
   },
   "common": {
     "loading": "Loading..."
+  },
+  "wizard": {
+    "steps": {
+      "rooms": "Rooms",
+      "dimensions": "Dimensions",
+      "works": "Works",
+      "summary": "Summary"
+    },
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Finish",
+    "reset": "Start over",
+    "progress": "Step {{current}} of {{total}}"
+  },
+  "rooms": {
+    "types": {
+      "kitchen": "Kitchen",
+      "bathroom": "Bathroom",
+      "living": "Living room",
+      "bedroom": "Bedroom",
+      "hallway": "Hallway",
+      "office": "Office",
+      "other": "Other"
+    },
+    "add": "Add room",
+    "remove": "Remove",
+    "edit": "Edit name",
+    "editTitle": "Rename room",
+    "nameLabel": "Name",
+    "save": "Save",
+    "cancel": "Cancel",
+    "empty": "No rooms added yet",
+    "selectType": "Select room type"
+  },
+  "dimensions": {
+    "walls": "Walls",
+    "wall": "Wall",
+    "ceilings": "Ceilings",
+    "ceiling": "Ceiling",
+    "floor": "Floor",
+    "corners": "Corners",
+    "grooves": "Grooves",
+    "acrylic": "Acrylic",
+    "addWall": "Add wall",
+    "addCeiling": "Add ceiling",
+    "removeWall": "Remove wall",
+    "removeCeiling": "Remove ceiling",
+    "netArea": "Net area",
+    "unit": {
+      "m2": "m\u00b2",
+      "mb": "mb",
+      "szt": "pcs"
+    }
+  },
+  "works": {
+    "types": {
+      "painting": "Painting",
+      "priming": "Priming",
+      "plastering": "Plastering",
+      "floorProtection": "Floor protection",
+      "corners": "Corners",
+      "grooves": "Grooves",
+      "acrylic": "Acrylic"
+    },
+    "unitPrice": "Unit price",
+    "quantity": "Quantity",
+    "cost": "Cost",
+    "addCustom": "Add custom work",
+    "customName": "Work name",
+    "customUnit": "Unit",
+    "customQuantity": "Quantity",
+    "enabled": "Enabled",
+    "disabled": "Disabled"
+  },
+  "summary": {
+    "title": "Estimate summary",
+    "room": "Room",
+    "work": "Work",
+    "subtotal": "Room subtotal",
+    "netTotal": "Net total",
+    "vat": "VAT",
+    "vatRate": "VAT rate",
+    "grossTotal": "Gross total",
+    "exportPdf": "Download PDF",
+    "pdfGenerating": "Generating...",
+    "pdfFormat": "PDF format",
+    "pdfStandard": "Standard",
+    "pdfTabular": "Tabular",
+    "noRooms": "Add rooms to see the estimate"
   }
 }
